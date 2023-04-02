@@ -23,7 +23,7 @@ body {
  display: flex;
  justify-content: space-between;
  align-items: center;
- min-width: 100vw;
+ min-width: 100%;
 }
 
 nav {
@@ -74,6 +74,10 @@ nav.active {
 .nav__logo a {
  text-decoration: none;
  color: #f3f3f3;
+}
+
+#alternate__nav {
+ background-color: #0f0f0f;
 }
 
 /* Style rules for hamburger */
@@ -224,6 +228,138 @@ header .nav__container{
 .tablet-desktop {
  display: none;
 }
+
+/* Style rules for main content */
+#alternate__main {
+ background-color: #f3f3f3;
+}
+
+/* Style rules for Classes content */
+
+ .classes__header {
+  background-image: url(../images/classes-banner.jpg);
+  background-position: top;
+  background-size: 155%;
+  min-height: 30vh;
+ }
+
+ .classes__header h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5;
+  color: #f3f3f3;
+  text-align: center;
+  padding-top: 10%;
+ }
+
+ .classes__intro {
+  background-color: #e6e6e6;
+  padding: 5% 5% 10% 5%;
+  margin: 5%;
+ }
+
+ .classes__intro h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-style: normal;
+  color: #0f0f0f;
+  padding-bottom: 5%;
+  text-align: center;
+ }
+
+ .classes__intro p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  color: #0f0f0f;
+  padding-bottom: 7%;
+  text-align: center;
+ }
+
+ .classes__intro img {
+  width: 100%;
+  padding: 5% 0 5% 0;
+ }
+
+ .classes__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 5% 15% 5%;
+ }
+
+ .classes__container h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5;
+  color: #0f0f0f;
+  padding-bottom: 5%;
+  text-align: center;
+ }
+
+ .classes__container h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.3;
+  color: #0f0f0f;
+  padding: 0 0 5% 0;
+  text-align: center;
+ }
+
+ .classes__container p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+  color: #0f0f0f;
+  padding: 0 0 5% 0;
+  text-align: center;
+ }
+
+ .trainer__extra p{
+  font-size: .9em;
+  font-weight: 300;
+  padding-top: 10px;
+ }
+
+ .title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+ }
+
+ .classes__container h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  font-style: italic;
+  color: #0f0f0f;
+ }
+
+ .classes__container h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+  color: #0f0f0f;
+  padding: 0 0 5% 0;
+ }
+
+ .classes__container img {
+  max-width: 25%;
+ }
 
 /* Style rules for footer */
 
@@ -432,6 +568,47 @@ i {
   max-width: 400px;
  }
 
+ /* Style rules for classes page */
+
+ .classes__header {
+  min-height: 35vh;
+  background-size: 100%;
+  background-position: top
+ }
+
+ .classes__header h1 {
+  font-size: 4em;
+  padding-top: 5%;
+ }
+
+ .classes__intro {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  column-gap: 30px;
+  grid-auto-flow: row;
+  padding: 5%;
+ }
+
+ .classes__intro--text h3, .classes__intro--text p {
+  text-align: left;
+ }
+
+ .classes__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+  grid-auto-flow: row;
+  padding: 5%;
+ }
+
+ .title__container {
+  justify-content: flex-start;
+ }
+
+ .level p {
+  text-align: left;
+ }
+
  /* Style rules for footer section */
 
  .footer__logo {
@@ -515,6 +692,8 @@ i {
 
  /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1055px), print {
+
+ /* Style rules for nav */
  .nav__container {
   padding: 22px 40px;
  }
@@ -532,7 +711,8 @@ i {
   margin: 0 auto;
   max-width: 80%;
  }
-
+ 
+ /* Style rules for hero section */
  .hero__grid {
   grid-template-columns: 40% 1fr;
   column-gap: 40px;
@@ -541,5 +721,46 @@ i {
  .hero__content h1 {
   font-size: 6em;
  }
+
+ /* Style rules for classes */
+
+ .classes__header {
+  min-height: 50vh;
+ }
+
+ .classes__header h1 {
+  font-size: 5em;
+ }
+
+ .classes__intro {
+  align-items: center;
+  justify-content: center;
+ }
+
+ .classes__intro img {
+  max-width: 700px;
+  margin: 0 auto;
+ }
+
+ .classes__intro--text h3 {
+  font-size: 2em;
+ }
+
+ .classes__container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3%;
+  padding-top: 0;
+ }
 }
- 
+
+
+/* Media Query for Large Desktop Viewport */
+
+@media screen and (min-width: 1700px), print {
+ .classes__intro--text h3 {
+  font-size: 3em;
+ }
+ .classes__intro--text p {
+  font-size: 1.5em;
+ }
+}
