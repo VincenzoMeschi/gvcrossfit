@@ -735,6 +735,7 @@ i {
  .classes__intro {
   align-items: center;
   justify-content: center;
+  margin: 5% 10%;
  }
 
  .classes__intro img {
@@ -750,6 +751,7 @@ i {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 3%;
   padding-top: 0;
+  margin: 0 10%;
  }
 }
 
@@ -757,10 +759,31 @@ i {
 /* Media Query for Large Desktop Viewport */
 
 @media screen and (min-width: 1700px), print {
+
+ .about {
+  padding: 45px 20%;
+ }
+
+ .classes__intro {
+  margin: 5% 20%;
+ }
+
  .classes__intro--text h3 {
-  font-size: 3em;
+  font-size: 2.7em;
  }
  .classes__intro--text p {
   font-size: 1.5em;
+ }
+
+ .classes__container {
+  margin: 0 15%;
+ }
+
+ .title__container {
+  font-size: 1em;
+ }
+
+ .title__container img {
+  max-width: 125px;
  }
 }
