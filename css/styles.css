@@ -596,7 +596,7 @@ i {
   column-gap: 30px;
  }
 
- /* Style rules for about section */
+ /* Style rules for about section of index */
 
  .about {
   padding: 45px 75px;
@@ -634,15 +634,43 @@ i {
   max-width: 400px;
  }
 
+ /* Style rules for about page */
+ .about__main h5 {
+  font-size: .8em;
+ }
+
+ .about__main h2 {
+  font-size: 3em;
+ }
+
+ .about__main img {
+  margin: 3% 0;
+ }
+
+ .about__main p {
+  font-size: 1.2em;
+ }
+
+ .about__main h4 {
+  font-size: 2em;
+  padding-top: 20%;
+ }
+
+ .level {
+  margin: 5% auto;
+  max-width: 80%;
+ }
+
+
  /* Style rules for classes page */
 
- .classes__header {
+ .classes__header, .about__header {
   min-height: 35vh;
   background-size: 100%;
   background-position: top
  }
 
- .classes__header h1 {
+ .classes__header h1, .about__header h1 {
   font-size: 4em;
   padding-top: 5%;
  }
@@ -788,13 +816,52 @@ i {
   font-size: 6em;
  }
 
+ /* Style rules for about */
+
+ .about__main h5 {
+  font-size: 1em;
+ }
+
+ .about__main h2 {
+  font-size: 4em;
+ }
+
+ .about__main h4 {
+  font-size: 2.5em;
+  padding-top: 15%;
+ }
+
+ .about__levels {
+  display: grid;;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3% 0;
+  column-gap: 1%;
+
+ }
+
+ .level {
+  max-width: 100%;
+  height: auto;
+ }
+
+ .level p {
+  text-align: center;
+  padding-top: 5%;
+ }
+
+ .level:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+ }
+ 
+
  /* Style rules for classes */
 
- .classes__header {
+ .classes__header, .about__header {
   min-height: 50vh;
  }
 
- .classes__header h1 {
+ .classes__header h1, about__header h1 {
   font-size: 5em;
  }
 
