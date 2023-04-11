@@ -271,6 +271,12 @@ header .nav__container{
  color: #f3f3f3;
 }
 
+#about__crossfit-info {
+ font-size: 1.25em;
+ font-weight: 500;
+ font-style: italic;
+}
+
 .about__main h4 {
  font-family: 'Source Sans Pro', sans-serif;
  font-size: 1.2em;
@@ -644,16 +650,20 @@ i {
  }
 
  .about__main img {
-  margin: 3% 0;
+  margin: 8% 0 2% 0;
  }
 
  .about__main p {
   font-size: 1.2em;
  }
 
+ #about__crossfit-info {
+  font-size: 1.5em;
+ }
+
  .about__main h4 {
   font-size: 2em;
-  padding-top: 20%;
+  padding-top: 15%;
  }
 
  .level {
