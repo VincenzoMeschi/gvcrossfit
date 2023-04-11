@@ -300,6 +300,62 @@ header .nav__container{
  color: #f3f3f3;
  margin-bottom: 4%;
 }
+
+/* Style rules for Pricing content */
+
+.pricing__header {
+ background-image: url(../images/pricing-banner.jpg);
+ background-position: top;
+ background-size: 110%;
+ min-height: 30vh;
+}
+
+.pricing__heading {
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 1.5em;
+ font-weight: 700;
+ color: #f3f3f3;
+ padding: 10% 5% 0 5%;
+ text-align: center;
+}
+
+/* Style rusles for pricing table */
+
+.pricing__table {
+ border-collapse: collapse;
+ margin: 10% auto 5% auto;
+ font-size: .9em;
+}
+
+.pricing__table thead tr {
+ background-color: #0a0a0a;
+ color: #f3f3f3;
+ text-align: left;
+ font-weight: 700;
+}
+
+.pricing__table th, .pricing__table td {
+ padding: 12px 15px;
+ color: #f3f3f3;
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pricing__table tbody tr {
+ border-bottom: 1px solid #dddddd54;
+}
+
+.pricing__table tbody tr:nth-of-type(even) {
+ background-color: #1f1f1f;
+}
+
+.pricing__table tfoot tr {
+ background-color: #0a0a0a;
+ color: #f3f3f3;
+ text-align: center;
+ font-style: italic;
+ font-weight: 700;
+}
+
 /* Style rules for Classes content */
 
  .classes__header {
@@ -309,7 +365,7 @@ header .nav__container{
   min-height: 30vh;
  }
 
- .classes__header h1, .about__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 3em;
   font-weight: 900;
@@ -661,16 +717,33 @@ i {
   max-width: 80%;
  }
 
+ /* Style rule for Pricing page */
+
+ .pricing__heading {
+  font-size: 2em;
+  padding-top: 7%;
+ }
+
+ /* Style rules for pricing table */
+
+ .pricing__table {
+  min-width: 90%;
+  font-size: 1em;
+  margin: 5% auto;
+ }
+
+ 
+
 
  /* Style rules for classes page */
 
- .classes__header, .about__header {
+ .classes__header, .about__header, .pricing__header {
   min-height: 35vh;
   background-size: 100%;
   background-position: top
  }
 
- .classes__header h1, .about__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1 {
   font-size: 4em;
   padding-top: 5%;
  }
@@ -853,15 +926,28 @@ i {
   transform: scale(1.02);
   transition: 0.3s;
  }
+
+ /* Style rules for pricing */
+
+ .pricing__heading {
+  font-size: 3em;
+  padding-top: 5%;
+ }
+
+ .pricing__table {
+  font-size: 1.3em;
+ }
+
+
  
 
  /* Style rules for classes */
 
- .classes__header, .about__header {
+ .classes__header, .about__header, .pricing__header {
   min-height: 50vh;
  }
 
- .classes__header h1, about__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1 {
   font-size: 5em;
  }
 
