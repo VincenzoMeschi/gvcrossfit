@@ -362,6 +362,68 @@ header .nav__container{
  font-weight: 700;
 }
 
+/* Style rules for Resources content */
+
+.resources__header {
+ background-image: url(../images/resources-banner.jpg);
+ background-position: top;
+ background-size: 155%;
+ min-height: 30vh;
+}
+
+.resources__table {
+ border-collapse: collapse;
+ margin: 10% auto 5% auto;
+ font-size: .7em;
+ min-width: 90%;
+ width: 100%;
+ align-items: center;
+}
+
+.resources__table caption {
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 2em;
+ font-weight: 700;
+ color: #f3f3f3;
+ padding: 5%;
+ text-align: center;
+}
+
+.resources__table thead tr {
+ background-color: #0a0a0a;
+ color: #f3f3f3;
+ text-align: left;
+ font-weight: 700;
+ font-size: 1.4em;
+}
+
+.resources__table th, .resources__table td {
+ padding: 12px 10px;
+ color: #f3f3f3;
+ font-family: 'Source Sans Pro', sans-serif;
+ text-align: left;
+}
+
+.resources__table th {
+ padding: 3%;
+}
+
+.resources__table tbody tr {
+ border-bottom: 1px solid #dddddd54;
+}
+
+.resources__table tbody tr:nth-of-type(even) {
+ background-color: #1f1f1f;
+}
+
+.tablet-desktop-table {
+ display: none;
+}
+
+.mobile-table {
+ display: table-cell;
+}
+
 /* Style rules for Classes content */
 
  .classes__header {
@@ -371,7 +433,7 @@ header .nav__container{
   min-height: 30vh;
  }
 
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 3em;
   font-weight: 900;
@@ -817,13 +879,13 @@ i {
 
  /* Style rules for classes page */
 
- .classes__header, .about__header, .pricing__header, .contact__header {
+ .classes__header, .about__header, .pricing__header, .contact__header, .resources__header {
   min-height: 35vh;
   background-size: 100%;
   background-position: top
  }
 
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
   font-size: 4em;
   padding-top: 5%;
  }
@@ -855,6 +917,25 @@ i {
  .level p {
   text-align: left;
  }
+
+ /* Style rules for resources page */
+
+ .resources__table{
+  font-size: 1em;
+  margin: 5% auto;
+ }
+
+ .resources__table td {
+  padding: 3%;
+ }
+
+ .tablet-desktop-table {
+  display: table-cell;
+ }
+ .mobile-table {
+  display: none;
+ }
+
 
  /* Style rules for Contact page */
 
@@ -1053,11 +1134,11 @@ i {
 
  /* Style rules for classes */
 
- .classes__header, .about__header, .pricing__header, .contact__header {
+ .classes__header, .about__header, .pricing__header, .contact__header, .resources__header {
   min-height: 50vh;
  }
 
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1 {
+ .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
   font-size: 5em;
  }
 
