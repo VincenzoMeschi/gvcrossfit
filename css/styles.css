@@ -591,6 +591,40 @@ input {
   color: #0f0f0f;
 }
 
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.7em;
+  color: #f6f6f6;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.gender label {
+  margin: 6px 20px;
+}
+
+.exp__level {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+}
+
+.exp__level label {
+  margin: 6px 0;
+}
+
+.exp__level select {
+  height: 30px;
+}
+
 textarea {
   width: 100%;
   padding: 12px 20px;
@@ -963,6 +997,10 @@ i {
     background-color: #f3f3f3;
     color: #0f0f0f;
     transition: 0.3s;
+  }
+
+  .exp__level {
+    grid-column: 2 / span 2;
   }
 
   /* Style rules for footer section */
