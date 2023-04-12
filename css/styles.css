@@ -1,11 +1,10 @@
-
 /* Style Reset */
 
 * {
- margin: 0;
- padding: 0;
- border: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 /* Style rules for mobile viewport */
@@ -13,428 +12,426 @@
 /* Style rules for body */
 
 body {
- background-color: #0f0f0f;
+  background-color: #0f0f0f;
 }
 
 /* Style rules for nav */
 
 .nav__container {
- padding: 22px 20px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- min-width: 100%;
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
 }
 
 nav {
- position: fixed;
- left: -100%;
- top: 0;
- background-color: #0f0f0f;
- width: 75%;
- height: 100vh;
- transition: 0.3s;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  background-color: #0f0f0f;
+  width: 75%;
+  height: 100vh;
+  transition: 0.3s;
 }
 
 nav ul {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: flex-start;
- margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15%;
 }
 
 nav ul li {
- list-style: none;
- border-bottom: 1px solid #f3f3f344;
- width: 100%;
- padding: 5% 5%;
+  list-style: none;
+  border-bottom: 1px solid #f3f3f344;
+  width: 100%;
+  padding: 5% 5%;
 }
-nav ul li:first-child
-{
- border-top: 1px solid #f3f3f344;
+nav ul li:first-child {
+  border-top: 1px solid #f3f3f344;
 }
 
 nav ul li a {
- text-decoration: none;
- color: #f3f3f3;
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.7em;
- font-weight: 700;
- font-style: italic;
- line-height: 1.5;
- padding: 20px 0;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  padding: 20px 0;
 }
 
 nav.active {
- left: 0;
+  left: 0;
 }
 
-
 .nav__logo a {
- text-decoration: none;
- color: #f3f3f3;
+  text-decoration: none;
+  color: #f3f3f3;
 }
 
 #alternate__nav {
- background-color: #0f0f0f;
+  background-color: #0f0f0f;
 }
 
 /* Style rules for hamburger */
 .hamburger {
- display: block;
+  display: block;
 }
 
 .bar {
- display: block;
- width: 20px;
- height: 2px;
- background-color: #f3f3f3;
- margin: 5px auto;
- transition: all 0.3s ease-in-out;
- -webkit-transition: all 0.3s ease-in-out;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #f3f3f3;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .hamburger.active .bar:nth-child(2) {
- opacity: 0;
+  opacity: 0;
 }
 .hamburger.active .bar:first-child {
- transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .hamburger.active .bar:last-child {
- transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
-header .nav__container{
- position: fixed;
+header .nav__container {
+  position: fixed;
 }
 
 #header__logo {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 2em;
- font-weight: 500;
- font-style: italic;
- line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
 }
 
 #header__logo span {
- font-weight: 900;
- padding-left: 1px;
+  font-weight: 900;
+  padding-left: 1px;
 }
 
 /* Style rules for hero section */
 
 .hero__banner {
- min-height: 85vh;
- background-image: url(../images/hero-banner.jpg);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- display: flex;
- justify-content: center;
- align-items: center;
+  min-height: 85vh;
+  background-image: url(../images/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__content {
- text-align: center;
+  text-align: center;
 }
 
 .hero__content h1 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 3.5em;
- font-weight: 900;
- font-style: italic;
- line-height: 1.5;
- color: #f3f3f3;
- margin-bottom: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5;
+  color: #f3f3f3;
+  margin-bottom: 30px;
 }
 
 .hero__content a {
- text-decoration: none;
- color: #000;
- padding: 10px 20px;
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.2em;
- font-weight: 700;
- font-style: italic;
- line-height: 1.5;
- background-color: #f3f3f3;
- border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+  border-radius: 5px;
 }
 
 .template__container {
- height: 70vh;
+  height: 70vh;
 }
 
 /* Style rules for hero__about section */
 
 .about {
- background-color: #f3f3f3;
- padding: 0 7%;
+  background-color: #f3f3f3;
+  padding: 0 7%;
 }
 
 .about h2 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 2.5em;
- font-weight: 900;
- font-style: italic;
- line-height: 1.5;
- color: #0f0f0f;
- padding: 15% 0 5% 0;
- text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5;
+  color: #0f0f0f;
+  padding: 15% 0 5% 0;
+  text-align: center;
 }
 
 .about__text {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.2em;
- font-weight: 400;
- line-height: 1.5;
- color: #0f0f0f;
- text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0f0f0f;
+  text-align: center;
 }
 
 #about__btn {
- display: block;
- width: 45%;
- margin: 40px auto 0 auto;
- text-decoration: none;
- color: #f3f3f3;
- padding: 10px 20px;
- font-family: 'Source Sans Pro', sans-serif;
- font-size: .75em;
- font-weight: 700;
- font-style: italic;
- line-height: 1.5;
- background-color: #0f0f0f;
- border-radius: 5px;
+  display: block;
+  width: 45%;
+  margin: 40px auto 0 auto;
+  text-decoration: none;
+  color: #f3f3f3;
+  padding: 10px 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  background-color: #0f0f0f;
+  border-radius: 5px;
 }
 
 .about__images {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__images img {
- width: 50%;
- padding: 10% 0;
+  width: 50%;
+  padding: 10% 0;
 }
 
-.about__images img:last-child{
- padding: 10% 0 0 10px;
+.about__images img:last-child {
+  padding: 10% 0 0 10px;
 }
 
 /* Hide tablet-desktop class */
 .tablet-desktop {
- display: none;
+  display: none;
 }
 
 /* Style rules for main content */
 #alternate__main {
- background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 /* Style rules for About content */
 
 .about__header {
- background-image: url(../images/about-banner.jpg);
- background-position: top;
- background-size: 155%;
- min-height: 30vh;
+  background-image: url(../images/about-banner.jpg);
+  background-position: top;
+  background-size: 155%;
+  min-height: 30vh;
 }
 
 .about__main {
- text-align: center;
- padding: 10% 5%;
+  text-align: center;
+  padding: 10% 5%;
 }
 
 .about__main h5 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: .7em;
- font-weight: 400;
- color: #a0a0a0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #a0a0a0;
 }
 
 .about__main h2 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 2.5em;
- font-weight: 900;
- font-style: italic;
- color: #f3f3f3;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: italic;
+  color: #f3f3f3;
 }
 
 .about__main p {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1em;
- font-weight: 400;
- line-height: 1.5;
- color: #f3f3f3;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f3f3f3;
 }
 
 #about__crossfit-info {
- font-size: 1.25em;
- font-weight: 500;
- font-style: italic;
+  font-size: 1.25em;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .about__main h4 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.2em;
- font-weight: 900;
- font-style: italic;
- color: #f3f3f3;
- padding: 30% 0 0 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  font-style: italic;
+  color: #f3f3f3;
+  padding: 30% 0 0 0;
 }
 
 .about__main img {
- width: 100%;
- border: 1px solid #f3f3f325;
- margin: 10% 0;
+  width: 100%;
+  border: 1px solid #f3f3f325;
+  margin: 10% 0;
 }
 
 .level {
- margin: 10% 0;
- padding: 5% 3%;
- background-color: #1d1d1d;
+  margin: 10% 0;
+  padding: 5% 3%;
+  background-color: #1d1d1d;
 }
 
 .level h3 {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.5em;
- font-weight: 900;
- font-style: italic;
- color: #f3f3f3;
- margin-bottom: 4%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-style: italic;
+  color: #f3f3f3;
+  margin-bottom: 4%;
 }
 
 /* Style rules for Pricing content */
 
 .pricing__header {
- background-image: url(../images/pricing-banner.jpg);
- background-position: top;
- background-size: 110%;
- min-height: 30vh;
+  background-image: url(../images/pricing-banner.jpg);
+  background-position: top;
+  background-size: 110%;
+  min-height: 30vh;
 }
 
 .pricing__heading {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.5em;
- font-weight: 700;
- color: #f3f3f3;
- padding: 10% 5% 0 5%;
- text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f3f3f3;
+  padding: 10% 5% 0 5%;
+  text-align: center;
 }
 
 /* Style rusles for pricing table */
 
 .pricing__table {
- border-collapse: collapse;
- margin: 10% auto 5% auto;
- font-size: .9em;
+  border-collapse: collapse;
+  margin: 10% auto 5% auto;
+  font-size: 0.9em;
 }
 
 .pricing__table thead tr {
- background-color: #0a0a0a;
- color: #f3f3f3;
- text-align: left;
- font-weight: 700;
+  background-color: #0a0a0a;
+  color: #f3f3f3;
+  text-align: left;
+  font-weight: 700;
 }
 
-.pricing__table th, .pricing__table td {
- padding: 12px 15px;
- color: #f3f3f3;
- font-family: 'Source Sans Pro', sans-serif;
+.pricing__table th,
+.pricing__table td {
+  padding: 12px 15px;
+  color: #f3f3f3;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .pricing__table tbody tr {
- border-bottom: 1px solid #dddddd54;
+  border-bottom: 1px solid #dddddd54;
 }
 
 .pricing__table tbody tr:nth-of-type(even) {
- background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .pricing__table tfoot tr {
- background-color: #0a0a0a;
- color: #f3f3f3;
- text-align: center;
- font-style: italic;
- font-weight: 700;
+  background-color: #0a0a0a;
+  color: #f3f3f3;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
 }
 
 /* Style rules for Resources content */
 
 .resources__header {
- background-image: url(../images/resources-banner.jpg);
- background-position: top;
- background-size: 155%;
- min-height: 30vh;
+  background-image: url(../images/resources-banner.jpg);
+  background-position: top;
+  background-size: 155%;
+  min-height: 30vh;
 }
 
 .resources__table {
- border-collapse: collapse;
- margin: 10% auto 5% auto;
- font-size: .7em;
- min-width: 90%;
- width: 100%;
- align-items: center;
+  border-collapse: collapse;
+  margin: 10% auto 5% auto;
+  font-size: 0.7em;
+  min-width: 90%;
+  width: 90%;
 }
 
 .resources__table caption {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 2em;
- font-weight: 700;
- color: #f3f3f3;
- padding: 5%;
- text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #f3f3f3;
+  padding: 5%;
+  text-align: center;
 }
 
 .resources__table thead tr {
- background-color: #0a0a0a;
- color: #f3f3f3;
- text-align: left;
- font-weight: 700;
- font-size: 1.4em;
+  background-color: #0a0a0a;
+  color: #f3f3f3;
+  font-weight: 700;
+  font-size: 1.4em;
 }
 
-.resources__table th, .resources__table td {
- padding: 12px 10px;
- color: #f3f3f3;
- font-family: 'Source Sans Pro', sans-serif;
- text-align: left;
-}
-
-.resources__table th {
- padding: 3%;
+.resources__table th,
+.resources__table td {
+  padding: 12px 10px;
+  color: #f3f3f3;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
 }
 
 .resources__table tbody tr {
- border-bottom: 1px solid #dddddd54;
+  border-bottom: 1px solid #dddddd54;
 }
 
 .resources__table tbody tr:nth-of-type(even) {
- background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .tablet-desktop-table {
- display: none;
+  display: none;
 }
 
 .mobile-table {
- display: table-cell;
+  display: table-cell;
 }
 
 /* Style rules for Classes content */
 
- .classes__header {
+.classes__header {
   background-image: url(../images/classes-banner.jpg);
   background-position: top;
   background-size: 155%;
   min-height: 30vh;
- }
+}
 
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__header h1,
+.about__header h1,
+.pricing__header h1,
+.contact__header h1,
+.resources__header h1 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 3em;
   font-weight: 900;
   font-style: italic;
@@ -442,49 +439,49 @@ header .nav__container{
   color: #f3f3f3;
   text-align: center;
   padding-top: 10%;
- }
+}
 
- .classes__intro {
+.classes__intro {
   background-color: #e6e6e6;
   padding: 5% 5% 10% 5%;
   margin: 5%;
- }
+}
 
- .classes__intro h3 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__intro h3 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   font-weight: 900;
   font-style: normal;
   color: #0f0f0f;
   padding-bottom: 5%;
   text-align: center;
- }
+}
 
- .classes__intro p {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__intro p {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   font-weight: 400;
   font-style: normal;
   color: #0f0f0f;
   padding-bottom: 7%;
   text-align: center;
- }
+}
 
- .classes__intro img {
+.classes__intro img {
   width: 100%;
   padding: 5% 0 5% 0;
- }
+}
 
- .classes__container {
+.classes__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
   padding: 0 5% 15% 5%;
- }
+}
 
- .classes__container h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__container h1 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5em;
   font-weight: 900;
   font-style: italic;
@@ -492,10 +489,10 @@ header .nav__container{
   color: #0f0f0f;
   padding-bottom: 5%;
   text-align: center;
- }
+}
 
- .classes__container h3 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__container h3 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   font-weight: 500;
   font-style: italic;
@@ -503,10 +500,10 @@ header .nav__container{
   color: #0f0f0f;
   padding: 0 0 5% 0;
   text-align: center;
- }
+}
 
- .classes__container p {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__container p {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   font-weight: 400;
   font-style: italic;
@@ -514,77 +511,77 @@ header .nav__container{
   color: #0f0f0f;
   padding: 0 0 5% 0;
   text-align: center;
- }
+}
 
- .trainer__extra p{
-  font-size: .9em;
+.trainer__extra p {
+  font-size: 0.9em;
   font-weight: 300;
   padding-top: 10px;
- }
+}
 
- .title__container {
+.title__container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   gap: 10px;
- }
+}
 
- .classes__container h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__container h2 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
   font-weight: 900;
   font-style: italic;
   color: #0f0f0f;
- }
+}
 
- .classes__container h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+.classes__container h6 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   font-style: italic;
   color: #0f0f0f;
   padding: 0 0 5% 0;
- }
+}
 
- .classes__container img {
+.classes__container img {
   max-width: 25%;
- }
+}
 
- /* Style rules for Contact page */
+/* Style rules for Contact page */
 
- .contact__header {
+.contact__header {
   background-image: url(../images/contact-banner.jpg);
   background-position: top;
   background-size: 155%;
   min-height: 30vh;
- }
+}
 
- .contact__box {
+.contact__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
   padding: 10% 5%;
- }
+}
 
- .contact__box h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+.contact__box h2 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
   font-weight: 900;
   font-style: italic;
   color: #f3f3f3;
   padding-bottom: 10%;
   text-align: center;
- }
- .field {
-  font-family: 'Source Sans Pro', sans-serif;
+}
+.field {
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: .7em;
- }
+  font-size: 0.7em;
+}
 
- input {
+input {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -592,9 +589,9 @@ header .nav__container{
   border: 1px solid #f3f3f3;
   background-color: #f3f3f3;
   color: #0f0f0f;
- }
+}
 
- textarea {
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -604,9 +601,9 @@ header .nav__container{
   color: #0f0f0f;
   resize: none;
   height: 100px;
- }
+}
 
- .btn {
+.btn {
   background-color: #303030;
   color: #f3f3f3;
   padding: 14px 20px;
@@ -614,593 +611,618 @@ header .nav__container{
   border: none;
   cursor: pointer;
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   font-weight: 700;
- }
-
-
+}
 
 /* Style rules for footer */
 
 .footer__links {
- display: none;
+  display: none;
 }
 
 .footer__container {
- padding: 17px 30px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- border: 1px solid #f3f3f344;
- border-left: none;
- border-right: none;
-}
-
-#footer__logo {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1.5em;
- font-weight: 500;
- font-style: italic;
- line-height: 1.5;
-}
-
-#footer__logo span {
- font-weight: 900;
- padding-left: 1px;
-}
-
-.footer__logo {
- display: flex;
-}
-
-.footer__logo a {
- text-decoration: none;
- color: #f3f3f3;
-}
-
-.footer__logo .social__links {
- padding: 0 7px;
- font-size: 1.2em;
-}
-
-.social__links li {
- list-style: none;
- display: inline-block;
-}
-
-.social__links li a {
- text-decoration: none;
- color: #f3f3f3;
- font-size: 1.2em;
- line-height: 1.5;
-}
-
-i {
- width: 30px;
- height: 30px;
- display: flex;
- text-align: center;
- text-justify: center;
-}
-
-.footer__bottom {
- padding: 10px 20px;
- display: flex;
- justify-content: center;
- border-bottom: 2px solid #f3f3f379;
-}
-
-.footer__bottom p {
- font-family: 'Source Sans Pro', sans-serif;
- font-size: 1em;
- font-weight: 400;
- font-style: italic;
- line-height: 1.5;
- color: #f3f3f3;
-}
-
-
-
-/* Tablet and Desktop Media Query */
-@media screen and (min-width: 720px), print {
-
- /* Hide mobile, show tablet-desktop */
-
- .tablet-desktop {
-  display: block;
- }
-
- .mobile {
-  display: none;
- }
-
- /* Style rules for nav */
-
- nav {
-  position:static;
-  display: inline-block;
-  left: auto;
-  top: auto;
-  background-color: none;
-  width: auto;
-  height: auto;
-  background-color: transparent;
- }
-
- nav ul {
-  display: inline;
-  margin-top: 0;
- }
-
- nav ul li {
-  display: inline-block;
-  border: none;
-  padding: 0;
-  width: auto;
- }
-
- nav ul li:first-child {
-  border: none;
- }
-
- nav ul li a {
-  padding: 0 7px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  opacity: 1;
-  transition: 0.3s;
- }
-
- nav ul li a:hover {
-  opacity: 0.7;
- }
-
- .hamburger {
-  display: none;
- }
-
- /* Style rules for hero section */
-
- .hero__banner {
-  min-height: 100vh;
- }
-
- .hero__content {
-  margin-bottom: 0;
- }
-
- .hero__content h1 {
-  font-size: 5em;
-  font-weight: 900;
-  opacity: 1;
-  transition: 0.3s;
- }
-
- .hero__content a:hover {
-  opacity: 0.7;
- }
-
- .hero__grid {
-  display: grid;
-  align-items: start;
-  justify-content: center;
-  grid-template-columns: 30% 1fr;
-  column-gap: 30px;
- }
-
- /* Style rules for about section of index */
-
- .about {
-  padding: 45px 75px;
- }
-
- .about h2 {
-  font-size: 3em;
-  padding: 1% 0 1% 0;
- }
-
- .about__text {
-  text-align: left;
- }
-
- .about__text h4 {
-  font-size: 1.5em;
-  font-weight: 900;
-  font-style: italic;
-  line-height: 1.5;
-  color: #0f0f0f;
-  padding: 15% 0 5% 0;
- }
-
- #about__btn {
-  width: 200px;
-  text-align: center;
-  margin: 50px 0 0 0;
- }
-
- .about__images img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  overflow: auto;
-  max-width: 400px;
- }
-
- /* Style rules for about page */
- .about__main h5 {
-  font-size: .8em;
- }
-
- .about__main h2 {
-  font-size: 3em;
- }
-
- .about__main img {
-  margin: 8% 0 2% 0;
- }
-
- .about__main p {
-  font-size: 1.2em;
- }
-
- #about__crossfit-info {
-  font-size: 1.5em;
- }
-
- .about__main h4 {
-  font-size: 2em;
-  padding-top: 15%;
- }
-
- .level {
-  margin: 5% auto;
-  max-width: 80%;
- }
-
- /* Style rule for Pricing page */
-
- .pricing__heading {
-  font-size: 2em;
-  padding-top: 7%;
- }
-
- /* Style rules for pricing table */
-
- .pricing__table {
-  min-width: 90%;
-  font-size: 1em;
-  margin: 5% auto;
- }
-
- 
-
-
- /* Style rules for classes page */
-
- .classes__header, .about__header, .pricing__header, .contact__header, .resources__header {
-  min-height: 35vh;
-  background-size: 100%;
-  background-position: top
- }
-
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
-  font-size: 4em;
-  padding-top: 5%;
- }
-
- .classes__intro {
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  column-gap: 30px;
-  grid-auto-flow: row;
-  padding: 5%;
- }
-
- .classes__intro--text h3, .classes__intro--text p {
-  text-align: left;
- }
-
- .classes__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5%;
-  grid-auto-flow: row;
-  padding: 5%;
- }
-
- .title__container {
-  justify-content: flex-start;
- }
-
- .level p {
-  text-align: left;
- }
-
- /* Style rules for resources page */
-
- .resources__table{
-  font-size: 1em;
-  margin: 5% auto;
- }
-
- .resources__table td {
-  padding: 3%;
- }
-
- .tablet-desktop-table {
-  display: table-cell;
- }
- .mobile-table {
-  display: none;
- }
-
-
- /* Style rules for Contact page */
-
- .contact__header {
-  min-height: 35vh;
-  background-size: 100%;
-  background-position: top
- }
-
- .contact__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2%;
-  padding: 5%;
- }
-
- .contact__box h2 {
-  font-size: 2.5em;
-  padding: 5%;
-  grid-column: 1 / span 3;
- }
-
- .contact__box textarea {
-  grid-column: 1 / span 3;
-  height: 200px;
- }
-
- .contact__box .btn {
-  grid-column: 1 / span 3;
- }
-
- /* Style rules for footer section */
-
- .footer__logo {
-  font-size: 1.3em;
- }
-
- .footer__container {
-  padding: 80px 40px;
+  padding: 17px 30px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   border: 1px solid #f3f3f344;
   border-left: none;
   border-right: none;
- }
+}
 
- .footer__links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: start;
- }
-
- .footer__links li {
-  list-style: none;
- }
-
- .footer__links ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
- }
-
- .footer__links h4 {
-  font-family: 'Source Sans Pro', sans-serif;
+#footer__logo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
   font-weight: 500;
-  font-size: 1.2em;
   font-style: italic;
-  color: #a7a7a7;
-  padding-bottom: 1.3em;
- }
+  line-height: 1.5;
+}
 
- .footer__links li a {
+#footer__logo span {
+  font-weight: 900;
+  padding-left: 1px;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo a {
   text-decoration: none;
   color: #f3f3f3;
+}
+
+.footer__logo .social__links {
   padding: 0 7px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: .8em;
-  font-weight: 600;
-  line-height: 2.5;
-  opacity: 1;
-  transition: 0.3s;
- }
-
- .footer__links li a:hover {
-  opacity: 0.7;
- }
-
- .social__links li a {
-  padding: 11px;
- }
-
- .social__links ul li {
-  padding: 7px;
-  font-size: 1.3em;
- }
-
- .social__links ul li a {
-  border: 1px solid #f3f3f344;
-  border-radius: 50%;
-  opacity: 1;
-  transition: 0.3s;
- }
-
- .social__links ul li a:hover {
-  opacity: 0.7;
- }
- 
+  font-size: 1.2em;
 }
- /* Ending of media query */
 
- /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1055px), print {
+.social__links li {
+  list-style: none;
+  display: inline-block;
+}
 
- /* Style rules for nav */
- .nav__container {
-  padding: 22px 40px;
- }
+.social__links li a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
 
- .nav__logo a {
-  font-size: 1.5em;
- }
-
- nav ul li a {
-  font-size: 1.5em;
-  padding: 0 17px;
- }
-
- .container {
-  margin: 0 auto;
-  max-width: 80%;
- }
- 
- /* Style rules for hero section */
- .hero__grid {
-  grid-template-columns: 40% 1fr;
-  column-gap: 40px;
- }
-
- .hero__content h1 {
-  font-size: 6em;
- }
-
- /* Style rules for about */
-
- .about__main h5 {
-  font-size: 1em;
- }
-
- .about__main h2 {
-  font-size: 4em;
- }
-
- .about__main h4 {
-  font-size: 2.5em;
-  padding-top: 15%;
- }
-
- .about__levels {
-  display: grid;;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 3% 0;
-  column-gap: 1%;
-
- }
-
- .level {
-  max-width: 100%;
-  height: auto;
- }
-
- .level p {
+i {
+  width: 30px;
+  height: 30px;
+  display: flex;
   text-align: center;
-  padding-top: 5%;
- }
-
- .level:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
- }
-
- /* Style rules for pricing */
-
- .pricing__heading {
-  font-size: 3em;
-  padding-top: 5%;
- }
-
- .pricing__table {
-  font-size: 1.3em;
- }
-
-
- 
-
- /* Style rules for classes */
-
- .classes__header, .about__header, .pricing__header, .contact__header, .resources__header {
-  min-height: 50vh;
- }
-
- .classes__header h1, .about__header h1, .pricing__header h1, .contact__header h1, .resources__header h1 {
-  font-size: 5em;
- }
-
- .classes__intro {
-  align-items: center;
-  justify-content: center;
-  margin: 5% 10%;
- }
-
- .classes__intro img {
-  max-width: 700px;
-  margin: 0 auto;
- }
-
- .classes__intro--text h3 {
-  font-size: 2em;
- }
-
- .classes__container {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 3%;
-  padding-top: 0;
-  margin: 0 10%;
- }
-
- /* Style rules for contact page */
-
- .contact__box {
-  max-width: 1000px;
-  margin: 0 auto;
- }
+  text-justify: auto;
 }
 
+.footer__bottom {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #f3f3f379;
+}
+
+.footer__bottom p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: #f3f3f3;
+}
+
+/* Tablet and Desktop Media Query */
+@media screen and (min-width: 720px), print {
+  /* Hide mobile, show tablet-desktop */
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Style rules for nav */
+
+  nav {
+    position: static;
+    display: inline-block;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  nav ul {
+    display: inline;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+
+  nav ul li:first-child {
+    border: none;
+  }
+
+  nav ul li a {
+    padding: 0 7px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    opacity: 0.7;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Style rules for hero section */
+
+  .hero__banner {
+    min-height: 100vh;
+  }
+
+  .hero__content {
+    margin-bottom: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 5em;
+    font-weight: 900;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .hero__content a:hover {
+    opacity: 0.7;
+  }
+
+  .hero__grid {
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 30% 1fr;
+    column-gap: 30px;
+  }
+
+  /* Style rules for about section of index */
+
+  .about {
+    padding: 45px 75px;
+  }
+
+  .about h2 {
+    font-size: 3em;
+    padding: 1% 0 1% 0;
+  }
+
+  .about__text {
+    text-align: left;
+  }
+
+  .about__text h4 {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+    color: #0f0f0f;
+    padding: 15% 0 5% 0;
+  }
+
+  #about__btn {
+    width: 200px;
+    text-align: center;
+    margin: 50px 0 0 0;
+  }
+
+  .about__images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: auto;
+    max-width: 400px;
+  }
+
+  /* Style rules for about page */
+  .about__main h5 {
+    font-size: 0.8em;
+  }
+
+  .about__main h2 {
+    font-size: 3em;
+  }
+
+  .about__main img {
+    margin: 8% 0 2% 0;
+  }
+
+  .about__main p {
+    font-size: 1.2em;
+  }
+
+  #about__crossfit-info {
+    font-size: 1.5em;
+  }
+
+  .about__main h4 {
+    font-size: 2em;
+    padding-top: 15%;
+  }
+
+  .level {
+    margin: 5% auto;
+    max-width: 80%;
+  }
+
+  /* Style rule for Pricing page */
+
+  .pricing__heading {
+    font-size: 2em;
+    padding-top: 7%;
+  }
+
+  /* Style rules for pricing table */
+
+  .pricing__table {
+    min-width: 90%;
+    font-size: 1em;
+    margin: 5% auto;
+  }
+
+  /* Style rules for classes page */
+
+  .classes__header,
+  .about__header,
+  .pricing__header,
+  .contact__header,
+  .resources__header {
+    min-height: 35vh;
+    background-size: 100%;
+    background-position: top;
+  }
+
+  .classes__header h1,
+  .about__header h1,
+  .pricing__header h1,
+  .contact__header h1,
+  .resources__header h1 {
+    font-size: 4em;
+    padding-top: 5%;
+  }
+
+  .classes__intro {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: 30px;
+    grid-auto-flow: row;
+    padding: 5%;
+  }
+
+  .classes__intro--text h3,
+  .classes__intro--text p {
+    text-align: left;
+  }
+
+  .classes__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    grid-auto-flow: row;
+    padding: 5%;
+  }
+
+  .title__container {
+    justify-content: flex-start;
+  }
+
+  .level p {
+    text-align: left;
+  }
+
+  /* Style rules for resources page */
+
+  .resources__table {
+    font-size: 1em;
+    margin: 5% auto;
+  }
+
+  .tablet-desktop-table {
+    display: table-cell;
+  }
+  .mobile-table {
+    display: none;
+  }
+
+  /* Style rules for Contact page */
+
+  .contact__header {
+    min-height: 35vh;
+    background-size: 100%;
+    background-position: top;
+  }
+
+  .contact__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    padding: 5%;
+  }
+
+  .contact__box h2 {
+    font-size: 2.5em;
+    padding: 5%;
+    grid-column: 1 / span 3;
+  }
+
+  .contact__box textarea {
+    grid-column: 1 / span 3;
+    height: 200px;
+  }
+
+  .contact__box .btn {
+    grid-column: 1 / span 3;
+  }
+
+  .contact__box .btn:hover {
+    background-color: #f3f3f3;
+    color: #0f0f0f;
+    transition: 0.3s;
+  }
+
+  /* Style rules for footer section */
+
+  .footer__logo {
+    font-size: 1.3em;
+  }
+
+  .footer__container {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #f3f3f344;
+    border-left: none;
+    border-right: none;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .footer__links li {
+    list-style: none;
+  }
+
+  .footer__links ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .footer__links h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #a7a7a7;
+    padding-bottom: 1.3em;
+  }
+
+  .footer__links li a {
+    text-decoration: none;
+    color: #f3f3f3;
+    padding: 0 7px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 2.5;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .footer__links li a:hover {
+    opacity: 0.7;
+  }
+
+  .social__links li a {
+    padding: 11px;
+  }
+
+  .social__links ul li {
+    padding: 7px;
+    font-size: 1.3em;
+  }
+
+  .social__links ul li a {
+    border: 1px solid #f3f3f344;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .social__links ul li a:hover {
+    opacity: 0.7;
+  }
+}
+/* Ending of media query */
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1055px), print {
+  /* Style rules for nav */
+  .nav__container {
+    padding: 22px 40px;
+  }
+
+  .nav__logo a {
+    font-size: 1.5em;
+  }
+
+  nav ul li a {
+    font-size: 1.5em;
+    padding: 0 17px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  /* Style rules for hero section */
+  .hero__grid {
+    grid-template-columns: 40% 1fr;
+    column-gap: 40px;
+  }
+
+  .hero__content h1 {
+    font-size: 6em;
+  }
+
+  /* Style rules for about */
+
+  .about__main h5 {
+    font-size: 1em;
+  }
+
+  .about__main h2 {
+    font-size: 4em;
+  }
+
+  .about__main h4 {
+    font-size: 2.5em;
+    padding-top: 15%;
+  }
+
+  .about__levels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3% 0;
+    column-gap: 1%;
+  }
+
+  .level {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .level p {
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .level:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+
+  /* Style rules for pricing */
+
+  .pricing__heading {
+    font-size: 3em;
+    padding-top: 5%;
+  }
+
+  .pricing__table {
+    font-size: 1.3em;
+  }
+
+  /* Style rules for classes */
+
+  .classes__header,
+  .about__header,
+  .pricing__header,
+  .contact__header,
+  .resources__header {
+    min-height: 50vh;
+  }
+
+  .classes__header h1,
+  .about__header h1,
+  .pricing__header h1,
+  .contact__header h1,
+  .resources__header h1 {
+    font-size: 5em;
+  }
+
+  .classes__intro {
+    align-items: center;
+    justify-content: center;
+    margin: 5% 10%;
+  }
+
+  .classes__intro img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .classes__intro--text h3 {
+    font-size: 2em;
+  }
+
+  .classes__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3%;
+    padding-top: 0;
+    margin: 0 10%;
+  }
+
+  /* Style rules for contact page */
+
+  .contact__box {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* Style rules for resources page */
+
+  .resources__table th,
+  .resources__table td {
+    padding: 22px 20px;
+  }
+}
 
 /* Media Query for Large Desktop Viewport */
 
 @media screen and (min-width: 1700px), print {
+  .about {
+    padding: 45px 20%;
+  }
 
- .about {
-  padding: 45px 20%;
- }
+  .classes__intro {
+    margin: 5% 20%;
+  }
 
- .classes__intro {
-  margin: 5% 20%;
- }
+  .classes__intro--text h3 {
+    font-size: 2.7em;
+  }
+  .classes__intro--text p {
+    font-size: 1.5em;
+  }
 
- .classes__intro--text h3 {
-  font-size: 2.7em;
- }
- .classes__intro--text p {
-  font-size: 1.5em;
- }
+  .classes__container {
+    margin: 0 15%;
+  }
 
- .classes__container {
-  margin: 0 15%;
- }
+  .title__container {
+    font-size: 1em;
+  }
 
- .title__container {
-  font-size: 1em;
- }
+  .title__container img {
+    max-width: 125px;
+  }
 
- .title__container img {
-  max-width: 125px;
- }
+  .resources__table caption {
+    font-size: 3em;
+  }
+
+  .resources__table th,
+  .resources__table td {
+    padding: 42px 40px;
+  }
+
+  .resources__table th {
+    font-size: 1.5em;
+  }
+
+  .resources__table td {
+    font-size: 1.2em;
+  }
 }
