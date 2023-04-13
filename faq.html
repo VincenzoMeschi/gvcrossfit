@@ -3,24 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="We would love to hear from you! Fill out the Contact form below to get connected with someone from our team! Fill out the “New Member Application” form to start your journey with GV Crossfit!" />
-    <title>Contact - GV Crossfit</title>
+    <meta name="description" content="FAQ - GV Crossfit" />
+    <title>FAQ - GV Crossfit</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,900&display=swap" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
     <script src="https://kit.fontawesome.com/01142b331a.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
     <header>
       <div class="nav__container">
@@ -34,12 +24,14 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li>
-                <a>About</a>
-                <ul>
-                  <li><a href="about.html">--- About</a></li>
-                  <li><a href="location.html">--- Location</a></li>
-                  <li><a href="faq.html">--- FAQ</a></li>
-                </ul>
+                <div class="dropdown">
+                  <a>About</a>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                  </ul>
+                </div>
               </li>
               <li><a href="classes.html">Classes</a></li>
               <li><a href="resources.html">Resources</a></li>
@@ -56,32 +48,56 @@
       </div>
     </header>
     <main>
-      <div class="contact__header hero__banner">
-        <h1>Contact</h1>
+      <div class="about__header hero__banner">
+        <h1>FAQ</h1>
       </div>
 
       <div class="container">
-        <div class="contact__box">
-          <h2>Contact Us</h2>
-          <div class="gender">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" />
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" />
+        <!-- FAQ Setion -->
+        <div class="faq__content">
+          <div class="faq__item">
+            <div class="faq__question">
+              <h3>What is GVCrossfit Gym?</h3>
+            </div>
+            <div class="faq__answer">
+              <p>
+                GVCrossfit Gym is a fitness center located in Allendale, Michigan that offers CrossFit training programs. We are a community-driven gym that focuses on improving overall fitness and
+                health through high-intensity, constantly varied workouts.
+              </p>
+            </div>
           </div>
-          <div class="exp__level field">
-            <label for="exp">Experience Level:</label>
-            <select name="experience" id="exp">
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
-            </select>
+          <div class="faq__item">
+            <div class="faq__question">
+              <h3>What are the benefits of CrossFit training?</h3>
+            </div>
+            <div class="faq__answer">
+              <p>
+                CrossFit training offers many benefits, including improved cardiovascular endurance, strength, flexibility, balance, and coordination. It can also lead to increased energy levels,
+                weight loss, and improved mental health.
+              </p>
+            </div>
           </div>
-          <input type="text" class="field" placeholder="Your Name" />
-          <input type="text" class="field" placeholder="Your Email" />
-          <input type="text" class="field" placeholder="Phone" />
-          <textarea placeholder="Message" class="field"></textarea>
-          <input type="submit" id="submit" value="Submit" class="btn" />
+          <div class="faq__item">
+            <div class="faq__question">
+              <h3>What types of classes does GVCrossfit Gym offer?</h3>
+            </div>
+            <div class="faq__answer">
+              <p>
+                We offer a variety of classes, including CrossFit, Olympic weightlifting, and gymnastics. We also offer specialty classes such as endurance training, mobility, and nutrition coaching.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__question">
+              <h3>How can I become a member of GVCrossfit Gym?</h3>
+            </div>
+            <div class="faq__answer">
+              <p>
+                To become a member of GVCrossfit Gym, you can visit our website and sign up for a free trial class. After the trial, you can choose a membership package that fits your needs and
+                fitness goals.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
