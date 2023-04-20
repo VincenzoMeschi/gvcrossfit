@@ -1053,6 +1053,54 @@ i {
     text-align: left;
   }
 
+  /* Style rules for Registration page */
+  .register__container {
+    background-color: #0a0a0a;
+    padding: 5%;
+  }
+
+  .register__container h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: #f3f3f3;
+    padding: 1.3em;
+    text-align: center;
+  }
+
+  .register__container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2%;
+    padding-bottom: 5%;
+    align-items: center;
+  }
+
+  .form__group.address {
+    grid-column: 1 / span 3;
+  }
+
+  .form__group.city {
+    grid-column: 1 / span 2;
+  }
+
+  .form__group.email {
+    grid-column: 1 / span 2;
+  }
+
+  .form__group.work {
+    grid-column: 3 / span 2;
+  }
+
+  .submit__button {
+    grid-column: 1 / span 4;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .submit__button:hover {
+    opacity: 0.7;
+  }
+
   /* Style rules for resources page */
 
   .resources__table {

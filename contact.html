@@ -39,6 +39,7 @@
                   <li><a href="about.html">--- About</a></li>
                   <li><a href="location.html">--- Location</a></li>
                   <li><a href="faq.html">--- FAQ</a></li>
+                  <li><a href="register.html">--- REGISTER</a></li>
                 </ul>
               </li>
               <li><a href="classes.html">Classes</a></li>
@@ -63,25 +64,27 @@
       <div class="container">
         <div class="contact__box">
           <h2>Contact Us</h2>
-          <div class="gender">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" />
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" />
-          </div>
-          <div class="exp__level field">
-            <label for="exp">Experience Level:</label>
-            <select name="experience" id="exp">
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
-            </select>
-          </div>
-          <input type="text" class="field" placeholder="Your Name" />
-          <input type="text" class="field" placeholder="Your Email" />
-          <input type="text" class="field" placeholder="Phone" />
-          <textarea placeholder="Message" class="field"></textarea>
-          <input type="submit" id="submit" value="Submit" class="btn" />
+          <form action="mailto:noreply@gvcrossfit.com" method="post" enctype="text/plain">
+            <div class="gender">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" />
+            </div>
+            <div class="exp__level field">
+              <label for="exp">Experience Level:</label>
+              <select name="experience" id="exp">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+            <input type="text" class="field" placeholder="Your Name" />
+            <input type="text" class="field" placeholder="Your Email" />
+            <input type="text" class="field" placeholder="Phone" />
+            <textarea placeholder="Message" class="field"></textarea>
+            <input type="submit" id="submit" value="Submit" class="btn" />
+          </form>
         </div>
       </div>
     </main>
