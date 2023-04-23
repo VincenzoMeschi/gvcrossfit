@@ -70,6 +70,8 @@
               <input type="radio" name="gender" id="male" />
               <label for="female">Female</label>
               <input type="radio" name="gender" id="female" />
+              <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" />
             </div>
             <div class="exp__level field">
               <label for="exp">Experience Level:</label>
@@ -79,10 +81,10 @@
                 <option value="advanced">Advanced</option>
               </select>
             </div>
-            <input type="text" class="field" placeholder="Your Name" />
-            <input type="text" class="field" placeholder="Your Email" />
-            <input type="text" class="field" placeholder="Phone" />
-            <textarea placeholder="Message" class="field"></textarea>
+            <input type="text" class="field" placeholder="Your Name" required />
+            <input type="text" class="field" placeholder="Your Email" required />
+            <input type="text" class="field" placeholder="Phone" required />
+            <textarea placeholder="Message" class="field" required></textarea>
             <input type="submit" id="submit" value="Submit" class="btn" />
           </form>
         </div>
